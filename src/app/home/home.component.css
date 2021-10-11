@@ -1,0 +1,122 @@
+html{
+    overflow: hidden;
+}
+.hero{
+    background-image: url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') !important;
+    background-size: cover;
+    background-position: center center;
+}
+.button{
+    background-color: transparent !important; 
+    border: none !important; 
+    color:whitesmoke !important;
+    outline: transparent !important;
+}
+.button.focus{
+    outline: black !important;
+}
+.ud_font{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 21px;
+    color: #9cc2f4;
+}
+@media screen and (max-width: 500px) {
+    .tabs {
+        overflow: hidden !important;
+        float: none !important;
+        display: block !important;
+        text-align: left !important;
+    }
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    background-color: transparent; 
+    border: none; 
+    color:whitesmoke;
+    outline: transparent;
+}
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    background-color: transparent; 
+    border: none; 
+    color:whitesmoke;
+    outline: transparent;
+}
+.time{
+    position:absolute; 
+    left: -154px;
+}
+.timeline-wrapper {
+    min-width: 400px;
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 570;
+    font-family: 'Kalam', cursive;
+}
+.StepProgress {
+    position: relative;
+    padding-left: 45px;
+    list-style: none;
+}
+.StepProgress::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 10px;
+    height: 100%;
+    border-left: 2px solid #9cc2f4;
+    box-sizing: unset;
+}
+.StepProgress-item {
+    position: relative;
+    counter-increment: list;
+}
+.StepProgress-item:not(:last-child) {
+    padding-bottom: 13px;
+}
+.StepProgress-item.is-done::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 6%;
+    left: -8%;
+    width: 9px;
+    height: 9px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #9cc2f4;
+    box-sizing: unset;
+}
+.StepProgress-item.current::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 6%;
+    left: -8%;
+    width: 9px;
+    height: 9px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: unset;
+}
+.StepProgress-item.future::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 6%;
+    left: -8%;
+    width: 9px;
+    height: 9px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    box-sizing: unset;
+}
