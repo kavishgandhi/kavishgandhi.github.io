@@ -1,14 +1,15 @@
-import { Component, ElementRef, OnInit, ViewChild, Inject, HostListener, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, Inject, HostListener } from '@angular/core';
 import { defineLordIconElement } from 'lord-icon-element';
 import lottie from 'lottie-web';
 import { DOCUMENT } from "@angular/common";
+// import {MatDialog, MatDialogConfig } from '@angular/material/dialog';
+// import { ResumeDialogComponent } from '../resume-dialog/resume-dialog.component';
 
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent implements OnInit {
   list = ['a Computer Scientist', 'a Learner', 'a Developer', 'a Researcher', 'an Engineer']
@@ -59,7 +60,7 @@ export class HomeComponent implements OnInit {
   panelOpenState = false;
   expansions_experience:expansionPanels[] = [
     {title: 'ML Model helps generate personalized emails', keywords: 'ML-PySpark', 
-    summary: 'The very first project that I was tasked with. We had to develop a MultiClass-MultiLabel Classification mdoel which would help in classifying customers into different class and categories. Depending on the classification the client would then send a personalized email to the customer. Since the number of datapoints was ~1MN, we decided to use PySpark for fast and distributed processing, and we were able to get ~3% more accuracy than the model built by our seniors.'},
+    summary: 'The very first project that I was tasked with. We had to develop a MultiClass-MultiLabel Classification model which would help in classifying customers into different class and categories. Depending on the classification the client would then send a personalized email to the customer. Since the number of datapoints was ~1MN, we decided to use PySpark for fast and distributed processing, and we were able to get ~3% more accuracy than the model built by our seniors.'},
     {title: 'Report Generation Script', keywords: 'PySpark-Automation', 
     summary: 'One of the most challenging and the longest project. We were tasked with converting and scaling "R" Report Generation code into some other framework which could handle almost 9x the data and with that save time & efforts. Knowing the capabilities of PySpark, we decide to go with that. The data was a combination of e-commerce sites across the world where the client had their products listed. 9 different markets spanning ~30 languages, we had to maintain the data integrity while processing (which "R" could not handle well). An entire service was developed which the client team could use and generate the report in one go rather than running the "R" code on their local system. The service developed was able to save ~9 hours of work and the number of people required to complete the task came down from 4 to 1.'},
     {title: 'Retail Product Classification', keywords: 'ML-CV', 

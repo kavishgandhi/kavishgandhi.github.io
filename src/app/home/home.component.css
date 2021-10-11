@@ -91,7 +91,7 @@ html{
     height: 9px;
     border: 2px solid black;
     border-radius: 50%;
-    background-color: #9cc2f4;
+    background-color: green;
     box-sizing: unset;
 }
 .StepProgress-item.current::after {
@@ -104,7 +104,7 @@ html{
     height: 9px;
     border: 2px solid black;
     border-radius: 50%;
-    background-color: white;
+    background-color: yellow;
     box-sizing: unset;
 }
 .StepProgress-item.future::after {

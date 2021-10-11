@@ -24,21 +24,21 @@
           </a></li>
           <li><a>
             <lord-icon (click)="goToJourney()"
-                src="https://cdn.lordicon.com/kekeoctr.json" 
+                src="https://cdn.lordicon.com/awzatcif.json" 
                 trigger="hover"
-                colors="primary:#9cc2f4,secondary:#ffffff"
+                colors="primary:#ffffff,secondary:#9cc2f4"
                 style="width:39px;height:39px">
             </lord-icon>   
             <button class="button" (click)="goToJourney()">Journey so Far</button>
           </a></li>
           <li><a>
             <lord-icon (click)="goToContact()"
-                src="https://cdn.lordicon.com/vmhkxnfq.json" 
+                src="https://cdn.lordicon.com/zpxybbhl.json" 
                 trigger="hover"
                 colors="primary:#ffffff,secondary:#9cc2f4"
                 style="width:39px;height:39px">
             </lord-icon>    
-            <button class="button" (click)="goToContact()">Coffee</button>
+            <button class="button" (click)="goToContact()">Get in Touch</button>
           </a></li>
         </ul>
     </div>
@@ -48,7 +48,7 @@
                 Hello World! My name is Kavish Gandhi!
             </p>
             <p class="ud_font">
-                I am <ngtypewriter [StringList]='list' [speed]='963'></ngtypewriter>
+                I am <ngtypewriter [StringList]='list' [speed]='1000'></ngtypewriter>
             </p>
         </div>
     </div>
@@ -60,14 +60,13 @@
                     A student with dreams turned<br> into a man with goals
                 </p>
                 <p style="margin-left: 50%; margin-block-start:-27%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;" >
-                    Worked as an Analyst at <a href="https://www.ugamsolutions.com/" target="_blank">Ugam - A Merkel Company</a>
-                    <br>Part of Research and Development team
+                    Worked as an Analyst(R&D team) at <a href="https://www.ugamsolutions.com/" target="_blank">Ugam - A Merkel Company</a>
                     <br>
                     <div style="margin-left: 50%; width: 50vw; height: 100vh; top: 0; left: 0;">
                         <mat-accordion>
                                 <ng-container *ngFor='let expansion of expansions_experience'>
-                                    <mat-expansion-panel hideToggle style="background-color: transparent;">
-                                        <mat-expansion-panel-header style="padding: 9px 0px">
+                                    <mat-expansion-panel hideToggle style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
+                                        <mat-expansion-panel-header style="padding: 12px 0px">
                                             <mat-panel-title style = "color: whitesmoke;font-family: 'Kalam', cursive; font-size: 20px;">
                                             {{ expansion.title }}
                                             </mat-panel-title>
@@ -86,15 +85,15 @@
     <div layput="column">
         <div class="container" >
             <p class="title"  style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
-                Use the knowledge gained, to <br>make the world a tad bit better
+                Used the knowledge gained, to <br>make the world a tad bit better
             </p>
             <p style="margin-left: 50%; margin-block-start:-24%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;"  >
                 Pinned Projects
                 <div style="margin-left: 50%; width: 50vw; height: 100vh; top: 0; left: 0;">
                 <mat-accordion>
                     <ng-container *ngFor='let expansion of expansions_projects'>
-                        <mat-expansion-panel hideToggle style="background-color: transparent;">
-                            <mat-expansion-panel-header style="padding: 9px 0px">
+                        <mat-expansion-panel hideToggle style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
+                            <mat-expansion-panel-header style="padding: 12px 0px">
                                 <mat-panel-title style = "color: whitesmoke;font-family: 'Kalam', cursive; font-size: 20px;">
                                 {{ expansion.title }}
                                 </mat-panel-title>
@@ -104,7 +103,7 @@
                         </p>                       
                         </mat-expansion-panel>
                     </ng-container>
-                    <p style="margin-top: 3%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;">More information about Projects and Achievements <a href="https://gtvault-my.sharepoint.com/:b:/g/personal/kgandhi45_gatech_edu/EeVNjeVvKihIoYC_c5HZwksBJXoNLn_ldV0zSiOZGb7Knw?e=O8itdP" target="_blank"><u>here</u></a></p>
+                    <p style="margin-top: 3%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;">More information about Projects and Achievements <a href="https://gtvault-my.sharepoint.com/:b:/g/personal/kgandhi45_gatech_edu/EeVNjeVvKihIoYC_c5HZwksBJXoNLn_ldV0zSiOZGb7Knw?e=yWzK9F" target="_blank"><u>here</u></a></p>
                 </mat-accordion>
                 </div>
         </div>
@@ -156,12 +155,12 @@
                         </li>
                         <li class="StepProgress-item is-done">
                             <div class="time">August 2021</div> 
-                            <div style="color: #9cc2f4;">Left Ugam to pursue my Masters degree</div>
+                            <div style="color: #9cc2f4;">Left Ugam to pursue Masters in Computer Science</div>
                         </li>
                         <li class="StepProgress-item current">
                             <div class="time" style="color: #9cc2f4;">August 2021</div> 
                             <div>Started Masters Program at Georgia Institute of Technology</div>
-                            <div style="font-weight: lighter;">In progress</div>
+                            <div style="font-weight: lighter;">(In progress)</div>
                         </li>
                         <li class="StepProgress-item future">
                             <div class="time">May 2023</div> 
@@ -173,12 +172,12 @@
         </div>
 </section>
 <section class="hero is-success is-fullheight" #contact>
-        <div>
-            <div class="container">
-                <p class="title"  style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
+        <div layout="row">
+            <div class="container" layout="column">
+                <p class="title" layout="row" style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
                     Would you like to meet me <br>over a coffee and talk?
                 </p>
-                <p style="margin-left: 50%; margin-block-start:-10%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;">
+                <p layout="row" style="margin-block-start:-9%; margin-left: 50%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;">
                     Mail me on <a href="mailto:kbgandhi12@gmail.com"><u>kbgandhi12@gmail.com</u></a> or <a href="mailto:kgandhi45@gatech.edu"><u>kgandhi45@gatech.edu</u></a>
                 </p>
                 <p style="margin-left: 50%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;">
