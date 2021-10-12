@@ -1,9 +1,9 @@
 <html>
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favi/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favi/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favi/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favi/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/home/kg/Desktop/humblesapien.github.io/src/assets/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/home/kg/Desktop/humblesapien.github.io/src/assets/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/home/kg/Desktop/humblesapien.github.io/src/assets/favi/favicon-16x16.png">
+    <link rel="manifest" href="/home/kg/Desktop/humblesapien.github.io/src/assets/favi/site.webmanifest">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <section class="hero is-success is-fullheight">
@@ -63,15 +63,15 @@
         <div >
             <div class="container" >
                 <p class="title"  style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
-                    A student with dreams turned<br> into a man with goals
+                    We do not learn from Experience<br>We learn from reflecting upon it
                 </p>
                 <p style="margin-left: 50%; margin-block-start:-27%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;" >
                     Worked as an Analyst(R&D team) at <a href="https://www.ugamsolutions.com/" target="_blank">Ugam - A Merkel Company</a>
                     <br>
-                    <div style="margin-left: 50%; width: 50vw; height: 100vh; top: 0; left: 0;">
+                    <div style="margin-left: 50%; width: 45vw; height: 100vh; top: 0; left: 0;">
                         <mat-accordion>
                                 <ng-container *ngFor='let expansion of expansions_experience'>
-                                    <mat-expansion-panel hideToggle style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
+                                    <mat-expansion-panel style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
                                         <mat-expansion-panel-header style="padding: 12px 0px">
                                             <mat-panel-title style = "color: whitesmoke;font-family: 'Kalam', cursive; font-size: 20px;">
                                             {{ expansion.title }}
@@ -95,17 +95,17 @@
             </p>
             <p style="margin-left: 50%; margin-block-start:-24%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;"  >
                 Pinned Projects
-                <div style="margin-left: 50%; width: 50vw; height: 100vh; top: 0; left: 0;">
+                <div style="margin-left: 50%; width: 45vw; height: 100vh; top: 0; left: 0;">
                 <mat-accordion>
                     <ng-container *ngFor='let expansion of expansions_projects'>
-                        <mat-expansion-panel hideToggle style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
+                        <mat-expansion-panel style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
                             <mat-expansion-panel-header style="padding: 12px 0px">
                                 <mat-panel-title style = "color: whitesmoke;font-family: 'Kalam', cursive; font-size: 20px;">
                                 {{ expansion.title }}
                                 </mat-panel-title>
                             </mat-expansion-panel-header>
                         <p style = "color: #9cc2f4; font-family: 'Kalam', cursive; font-size: 15px;">
-                            {{ expansion.summary }}
+                            ->{{ expansion.summary }}
                         </p>                       
                         </mat-expansion-panel>
                     </ng-container>
@@ -180,7 +180,7 @@
         <div layout="row">
             <div class="container" layout="column">
                 <p class="title" layout="row" style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
-                    Interested in learning more,<br> want to discuss cool ideas?
+                    Let's get in touch to discuss<br>some cool ideas?
                 </p>
                 <p layout="row" style="margin-block-start:-9%; margin-left: 50%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;">
                     Mail me on <a href="mailto:kbgandhi12@gmail.com"><u>kbgandhi12@gmail.com</u></a> or <a href="mailto:kgandhi45@gatech.edu"><u>kgandhi45@gatech.edu</u></a>

@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild, Inject, HostListener } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, Inject, HostListener, ViewEncapsulation } from '@angular/core';
 import { defineLordIconElement } from 'lord-icon-element';
 import lottie from 'lottie-web';
 import { DOCUMENT } from "@angular/common";
@@ -10,6 +10,7 @@ import { DOCUMENT } from "@angular/common";
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  encapsulation: ViewEncapsulation.None 
 })
 export class HomeComponent implements OnInit {
   list = ['a Computer Scientist', 'a Learner', 'a Developer', 'a Researcher', 'an Engineer']

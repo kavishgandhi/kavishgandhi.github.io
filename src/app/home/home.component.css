@@ -1,5 +1,5 @@
 html{
-    overflow: hidden;
+    overflow:auto;
 }
 .hero{
     background-image: url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') !important;
@@ -86,4 +86,7 @@ html{
     font-weight: 570;
     font-size: 15px;
     font-family: 'Kalam', cursive;
+}
+.mat-expansion-panel-header-description, .mat-expansion-indicator::after {
+    color: whitesmoke;
 }
