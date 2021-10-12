@@ -120,3 +120,43 @@ html{
     background-color: white;
     box-sizing: unset;
 }
+.info-timeline ul {
+    list-style: none;
+    margin-left: 50%;
+    margin-top: -30%;
+    margin-bottom: 1%;
+    margin-right: -3%;
+}
+
+.info-timeline ul li span.timeline-circle {
+    position: relative;
+    border: 2px solid #999;
+    border-radius: 100%;
+    width: 12px;
+    line-height: 12px;
+    margin-top: 0px;
+    background-color: #fff;
+    z-index: 2;
+    display: inline-block;
+}
+
+.info-timeline ul li:not(:first-of-type) span.timeline-circle::before {
+    position: absolute;
+    border: 1px solid #999;
+    width: 0;
+    height: 87px;
+    display: block;
+    content: '';
+    left: 50%;
+    z-index: 1;
+    top: -69px;
+    margin-left: -1px;
+}
+
+.info-timeline ul li p {
+    padding-left: 4%;
+    color:white;
+    font-weight: 570;
+    font-size: 15px;
+    font-family: 'Kalam', cursive;
+}
