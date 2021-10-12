@@ -72,8 +72,6 @@ export class HomeComponent implements OnInit {
     summary: 'One of the always ongoing task(s) that I was assigned was automating the manual work done by other team members using Python. This essentially helped save a lot of work for various client delivery teams'}
   ];
   expansions_projects:expansionPanels[] = [
-    {title: 'InfoChain', keywords: 'BlockChain', 
-    summary: 'Imagine a decentralized and distributed system of data storage and text services, no single entity having the entire responsibility of handling your data or the messages that you want to send. Such was our idea which we implemented using Blockchain as an underlying technology. Since it was completely new to us, we researched available methods using such decentralized methods and published a survey paper showing some of the best of the time. Then we went on to implement our service using Ethereum Swarm(data) and Whisper(messages) and also published an implementation paper'},
     {title: 'GodsEye', keywords: 'ML-AI', 
     summary: 'Implemented as a challenge for TechGig hackathon (for which we were able to achieve 1st runner-up position). Given a stream of video, we had to detect the total slots in a parking lot and determine using ML models whether it was empty or not, the coordinates, color, and orientation of the car (in filled up slots)'},
     {title: 'Hastakshara', keywords: 'ML-AI', 

@@ -63,7 +63,7 @@
         <div >
             <div class="container" >
                 <p class="title"  style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
-                    We do not learn from Experience<br>We learn from reflecting upon it
+                    "We do not learn from Experience<br>We learn from reflecting upon it"
                 </p>
                 <p style="margin-left: 50%; margin-block-start:-27%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;" >
                     Worked as an Analyst(R&D team) at <a href="https://www.ugamsolutions.com/" target="_blank">Ugam - A Merkel Company</a>
@@ -97,6 +97,18 @@
                 Pinned Projects
                 <div style="margin-left: 50%; width: 45vw; height: 100vh; top: 0; left: 0;">
                 <mat-accordion>
+                    <mat-expansion-panel style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
+                        <mat-expansion-panel-header style="padding: 12px 0px">
+                            <mat-panel-title style = "color: whitesmoke;font-family: 'Kalam', cursive; font-size: 20px;">
+                                InfoChain
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                    <p style = "color: #9cc2f4; font-family: 'Kalam', cursive; font-size: 15px;">
+                        ->Imagine a decentralized and distributed system of data storage and text services, no single entity having the entire responsibility of handling your data or the messages that you want to send. Such was our idea which we implemented using Blockchain as an underlying technology. Since it was completely new to us, we researched available methods using such decentralized methods and published a <a href="https://www.irjet.net/archives/V5/i10/IRJET-V5I10142.pdf" target="_blank"><u>survey paper</u></a> showing some of the best of the time. Then we went on to implement our service using Ethereum Swarm(data) and Whisper(messages) and also published an <a href="https://www.irjet.net/archives/V6/i4/IRJET-V6I4543.pdf" target="_blank"><u>implementation paper</u></a>
+                    </p>                       
+                    </mat-expansion-panel>
+                </mat-accordion>
+                <mat-accordion>
                     <ng-container *ngFor='let expansion of expansions_projects'>
                         <mat-expansion-panel style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
                             <mat-expansion-panel-header style="padding: 12px 0px">
@@ -119,7 +131,7 @@
     <div>
             <div class="container" >
                 <p class="title"  style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
-                    Live the Journey before <br>you reach the end
+                    "Live the Journey before <br>you reach the end"
                 </p>
                 <div class="info-timeline">
                     <ul>
@@ -133,7 +145,7 @@
                       </li>
                       <li>
                           <span class="timeline-circle" style="border: 3px solid green;"></span>
-                          <p style="color: #9cc2f4;">May 2019 -> Graduated with Bachelors of Technology degree in Computer Engineering from VJTI (CGPA-8.62/10)</p>
+                          <p style="color: #9cc2f4;">May 2019 -> Graduated with Bachelors of Technology degree in Computer Engineering from VJTI (CGPA-3.69/4)</p>
                       </li>
                       <li>
                           <span class="timeline-circle" style="border: 3px solid green;"></span>
