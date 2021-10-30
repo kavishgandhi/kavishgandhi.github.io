@@ -12,9 +12,9 @@
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/cdk": "^12.0.0",
-    "@angular/common": "~12.2.0",
+    "@angular/common": "^12.2.12",
     "@angular/compiler": "~12.2.0",
-    "@angular/core": "~12.2.0",
+    "@angular/core": "^12.2.12",
     "@angular/forms": "~12.2.0",
     "@angular/material": "^12.2.9",
     "@angular/platform-browser": "~12.2.0",
@@ -36,11 +36,11 @@
     "ngx-doc-viewer": "^2.0.4",
     "ngx-scrolltop": "^0.0.7",
     "postcss-loader": "^6.1.1",
-    "rxjs": "~6.6.0",
+    "rxjs": "^6.6.7",
     "t-writer.js": "^1.0.4",
     "tslib": "^2.3.0",
     "typed.js": "^2.0.12",
-    "zone.js": "~0.11.4"
+    "zone.js": "^0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.8",
