@@ -72,6 +72,8 @@ export class HomeComponent implements OnInit {
     summary: 'One of the always ongoing task(s) that I was assigned was automating the manual work done by other team members using Python. This essentially helped save a lot of work for various client delivery teams'}
   ];
   expansions_projects:expansionPanels[] = [
+    {title: 'Visual Imagery', keywords: 'Computer Vision', 
+    summary: "Think about an application that can give augmented information about buildings/things which you point at using your phone's camera. That is exactly what this project aims to implement. A small step towards the future of Augmented Reality applications."},
     {title: 'GodsEye', keywords: 'ML-AI', 
     summary: 'Implemented as a challenge for TechGig hackathon (for which we were able to achieve 1st runner-up position). Given a stream of video, we had to detect the total slots in a parking lot and determine using ML models whether it was empty or not, the coordinates, color, and orientation of the car (in filled up slots)'},
     {title: 'Hastakshara', keywords: 'ML-AI', 
