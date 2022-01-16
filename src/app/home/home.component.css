@@ -20,7 +20,7 @@ html{
     font-size: 21px;
     color: #9cc2f4;
 }
-@media screen and (max-width: 500px) {
+@media screen {
     .tabs {
         overflow: hidden !important;
         float: none !important;
