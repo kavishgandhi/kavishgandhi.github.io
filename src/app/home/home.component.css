@@ -1,0 +1,92 @@
+html{
+    overflow:auto;
+}
+.hero{
+    background-image: url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') !important;
+    background-size: cover;
+    background-position: center center;
+}
+.button{
+    background-color: transparent !important; 
+    border: none !important; 
+    color:whitesmoke !important;
+    outline: transparent !important;
+}
+.button.focus{
+    outline: black !important;
+}
+.ud_font{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 21px;
+    color: #9cc2f4;
+}
+@media screen {
+    .tabs {
+        overflow: hidden !important;
+        float: none !important;
+        display: block !important;
+        text-align: left !important;
+    }
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    background-color: transparent; 
+    border: none; 
+    color:whitesmoke;
+    outline: transparent;
+}
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    background-color: transparent; 
+    border: none; 
+    color:whitesmoke;
+    outline: transparent;
+}
+.info-timeline ul {
+    list-style: none;
+    margin-left: 50%;
+    margin-top: -30%;
+    margin-bottom: 1%;
+    margin-right: -3%;
+}
+
+.info-timeline ul li span.timeline-circle {
+    position: relative;
+    border: 2px solid #999;
+    border-radius: 100%;
+    width: 12px;
+    line-height: 12px;
+    margin-top: 0px;
+    background-color: #fff;
+    z-index: 2;
+    display: inline-block;
+}
+
+.info-timeline ul li:not(:first-of-type) span.timeline-circle::before {
+    position: absolute;
+    border: 1px solid #999;
+    width: 0;
+    height: 87px;
+    display: block;
+    content: '';
+    left: 50%;
+    z-index: 1;
+    top: -69px;
+    margin-left: -1px;
+}
+
+.info-timeline ul li p {
+    padding-left: 4%;
+    color:white;
+    font-weight: 570;
+    font-size: 15px;
+    font-family: 'Kalam', cursive;
+}
+.mat-expansion-panel-header-description, .mat-expansion-indicator::after {
+    color: whitesmoke;
+}

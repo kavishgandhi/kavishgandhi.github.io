@@ -1,0 +1,244 @@
+<html>
+<head>
+    <!-- <meta name="viewport" content="width=1024"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/home/kg/Desktop/humblesapien.github.io/src/assets/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/home/kg/Desktop/humblesapien.github.io/src/assets/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/home/kg/Desktop/humblesapien.github.io/src/assets/favi/favicon-16x16.png">
+    <link rel="manifest" href="/home/kg/Desktop/humblesapien.github.io/src/assets/favi/site.webmanifest">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<section class="hero is-success is-fullheight">
+    <div #spacer></div>
+    <div stickyThing class="tabs is-centered" [spacer]="spacer">
+        <ul>
+          <li><a>
+            <lord-icon (click)="goToExperience()"
+                src="https://cdn.lordicon.com/ngcezuqf.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#9cc2f4"
+                style="width:39px;height:39px">
+            </lord-icon>  
+            <button class="button" (click)="goToExperience()">Experience</button>
+          </a></li>
+          <li><a>
+            <lord-icon (click)="goToProjects()"
+                 src="https://cdn.lordicon.com/anihkfxp.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#9cc2f4"
+                style="width:39px;height:39px">
+            </lord-icon>    
+            <button class="button" (click)="goToProjects()">Projects</button>
+          </a></li>
+          <li><a>
+            <lord-icon (click)="goToJourney()"
+                src="https://cdn.lordicon.com/yxmgogps.json" 
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#9cc2f4"
+                style="width:39px;height:39px">
+            </lord-icon>   
+            <button class="button" (click)="goToJourney()">Journey so Far</button>
+          </a></li>
+          <li><a>
+            <lord-icon (click)="goToContact()"
+                src="https://cdn.lordicon.com/zpxybbhl.json" 
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#9cc2f4"
+                style="width:39px;height:39px">
+            </lord-icon>    
+            <button class="button" (click)="goToContact()">Get in Touch</button>
+          </a></li>
+        </ul>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="title">
+                Hello World! My name is Kavish Gandhi!
+            </p>
+            <p class="ud_font">
+                I am <ngtypewriter [StringList]='list' [speed]='903'></ngtypewriter>
+            </p>
+        </div>
+    </div>
+</section>
+<section class="hero is-success is-fullheight"  #experience>
+        <div >
+            <div class="container" >
+                <p class="title"  style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
+                    We do not learn from Experience<br>We learn from reflecting upon it
+                </p>
+                <p style="margin-left: 50%; margin-block-start:-27%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;" >
+                    Worked as an Intern(Edge AI team) at <a href="https://www.mediatek.com/" target="_blank">MediaTek USA Inc.</a>
+                    <br>
+                    <div style="margin-left: 50%; width: 45vw; height: 100vh; top: 0; left: 0;">
+                        <mat-accordion>
+                                <ng-container>
+                                    <mat-expansion-panel style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
+                                        <mat-expansion-panel-header style="padding: 12px 0px">
+                                            <mat-panel-title style = "color: whitesmoke;font-family: 'Kalam', cursive; font-size: 20px;">
+                                            Intern tasks
+                                            </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                    <p style = "color: #9cc2f4; font-family: 'Kalam', cursive; font-size: 15px;">
+                                        ->Contributed to proprietary source code tasked with building delegates enabling customers to achieve faster results on MediaTek SoC devices (~50% faster for ONNXRuntime, when compared to CPUs)
+                                          • Developed scripts to automate time consuming manual tasks, saving time and efforts
+                                          • Built visualization tools helping customers do better analysis of ML models
+                                    </p>                       
+                                    </mat-expansion-panel>
+                                </ng-container>
+                        </mat-accordion>
+                    </div>
+                <p style="margin-left: 50%; margin-block-start:-40%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;" >
+                    Worked as an Analyst(R&D team) at <a href="https://www.ugamsolutions.com/" target="_blank">Ugam - A Merkel Company</a>
+                    <br>
+                    <div style="margin-left: 50%; width: 45vw; height: 100vh; top: 0; left: 0;">
+                        <mat-accordion>
+                                <ng-container *ngFor='let expansion of expansions_experience'>
+                                    <mat-expansion-panel style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
+                                        <mat-expansion-panel-header style="padding: 12px 0px">
+                                            <mat-panel-title style = "color: whitesmoke;font-family: 'Kalam', cursive; font-size: 20px;">
+                                            {{ expansion.title }}
+                                            </mat-panel-title>
+                                        </mat-expansion-panel-header>
+                                    <p style = "color: #9cc2f4; font-family: 'Kalam', cursive; font-size: 15px;">
+                                        ->{{ expansion.summary }}
+                                    </p>                       
+                                    </mat-expansion-panel>
+                                </ng-container>
+                        </mat-accordion>
+                    </div>
+            </div>
+        </div>
+</section>
+<section class="hero is-success is-fullheight"  #projects>
+    <div layput="column">
+        <div class="container" >
+            <p class="title"  style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
+                Used the knowledge gained, to <br>make the world a tad bit better
+            </p>
+            <p style="margin-left: 50%; margin-block-start:-24%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;"  >
+                Pinned Projects
+                <div style="margin-left: 50%; width: 45vw; height: 100vh; top: 0; left: 0;">
+<!--                 <mat-accordion>
+                    <mat-expansion-panel style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
+                        <mat-expansion-panel-header style="padding: 12px 0px">
+                            <mat-panel-title style = "color: whitesmoke;font-family: 'Kalam', cursive; font-size: 20px;">
+                                InfoChain
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                    <p style = "color: #9cc2f4; font-family: 'Kalam', cursive; font-size: 15px;">
+                        ->Imagine a decentralized and distributed system of data storage and text services, no single entity having the entire responsibility of handling your data or the messages that you want to send. Such was our idea which we implemented using Blockchain as an underlying technology. Since it was completely new to us, we researched available methods using such decentralized methods and published a <a href="https://www.irjet.net/archives/V5/i10/IRJET-V5I10142.pdf" target="_blank"><u>survey paper</u></a> showing some of the best of the time. Then we went on to implement our service using Ethereum Swarm(data) and Whisper(messages) and also published an <a href="https://www.irjet.net/archives/V6/i4/IRJET-V6I4543.pdf" target="_blank"><u>implementation paper</u></a>
+                    </p>                       
+                    </mat-expansion-panel>
+                </mat-accordion> -->
+                <mat-accordion>
+                    <ng-container *ngFor='let expansion of expansions_projects'>
+                        <mat-expansion-panel style="background-color: transparent;" #panel (mouseenter)="panel.open()" (mouseleave)="panel.close()">
+                            <mat-expansion-panel-header style="padding: 12px 0px">
+                                <mat-panel-title style = "color: whitesmoke;font-family: 'Kalam', cursive; font-size: 20px;">
+                                {{ expansion.title }}
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                        <p style = "color: #9cc2f4; font-family: 'Kalam', cursive; font-size: 15px;">
+                            ->{{ expansion.summary }}
+                        </p>                       
+                        </mat-expansion-panel>
+                    </ng-container>
+                    <p style="margin-top: 3%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;">Take a look at my resume - <a href="https://drive.google.com/file/d/1w5SAR9xOR5dlgDmssZAkDIcfYOY6UzHE/view?usp=share_link" target="_blank"><u>here</u></a></p>
+                </mat-accordion>
+                </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-success is-fullheight"  #journey>
+    <div>
+            <div class="container" >
+                <p class="title"  style="margin-block-start:24%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
+                    Live the Journey before <br>you reach the end
+                </p>
+                <div class="info-timeline">
+                    <ul>
+                      <li>
+                          <span class="timeline-circle" style="border: 3px solid green;"></span>
+                          <p style="color: #9cc2f4;">July 2015 -> Started Bachelors program in Computer Engineering at VJTI</p>
+                      </li>
+                      <li>
+                          <span class="timeline-circle" style="border: 3px solid green;"></span>
+                          <p>December 2018 -> Winner of Coding Culture Hackathon 2.0</p>
+                      </li>
+                      <li>
+                          <span class="timeline-circle" style="border: 3px solid green;"></span>
+                          <p style="color: #9cc2f4;">May 2019 -> Graduated with Bachelors of Technology degree in Computer Engineering from VJTI (CGPA-3.69/4)</p>
+                      </li>
+                      <li>
+                          <span class="timeline-circle" style="border: 3px solid green;"></span>
+                          <p>July 2019 -> 1st runner up in TechGig Code Gladiators 2019 (for Artificial Intelligence challenge)</p>
+                      </li>
+                      <li>
+                        <span class="timeline-circle" style="border: 3px solid green;"></span>
+                        <p style="color: #9cc2f4;">August 2019 -> Joined Ugam Solutions - A Merkle Company as an Analyst</p>
+                    </li>
+                    <li>
+                        <span class="timeline-circle" style="border: 3px solid green;"></span>
+                        <p>May 2020 -> Transferred to Research & Development team</p>
+                    </li>
+                    <li>
+                        <span class="timeline-circle" style="border: 3px solid green;"></span>
+                        <p style="color: #9cc2f4;">September 2020 -> Received Team Award: Innovation (Q2-2020) for developing Classification model (Ugam)</p>
+                    </li>
+                    <li>
+                        <span class="timeline-circle" style="border: 3px solid green;"></span>
+                        <p>March 2020 -> Received Team Award: Target Achievement (Q3-2020) for building PySpark report generation service (Ugam)</p>
+                    </li>
+                    <li>
+                        <span class="timeline-circle" style="border: 3px solid green;"></span>
+                        <p style="color: #9cc2f4;">August 2021 -> Received 2 Golden Pyramid Awards ’21 – Team (Ugam)</p>
+                    </li>
+                    <li>
+                        <span class="timeline-circle" style="border: 3px solid green;"></span>
+                        <p>August 2021 -> Left Ugam to pursue Masters in Computer Science</p>
+                    </li>
+                    <li>
+                        <span class="timeline-circle" style="border: 3px solid green;"></span>
+                        <p style="color: #9cc2f4;">August 2021 -> Started Masters Program at Georgia Institute of Technology</p>
+                    </li>
+                    <li>
+                        <span class="timeline-circle" style="border: 3px solid green;"></span>
+                        <p>May to August 2022 -> Interned at MediaTek USA Inc</p>
+                    </li>
+                    <li>
+                        <span class="timeline-circle" style="border: 3px solid green;"></span>
+                        <p style="color: #9cc2f4;">December 2022 -> Graduate from Georgia Institute of Technology with Masters degree in Computer Science</p>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="hero is-success is-fullheight" #contact>
+        <div layout="row">
+            <div class="container" layout="column">
+                <p class="title" layout="row" style="margin-block-start:25%; margin-left:3% ; font-family: 'Dancing Script', cursive;font-size: 2.5rem; font-weight: 575;">
+                    Let's get in touch to discuss<br>some cool ideas?
+                </p>
+                <p layout="row" style="margin-block-start:-9%; margin-left: 50%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;">
+                    Mail me on <a href="mailto:kbgandhi12@gmail.com"><u>kbgandhi12@gmail.com</u></a> or <a href="mailto:kgandhi45@gatech.edu"><u>kgandhi45@gatech.edu</u></a>
+                </p>
+                <p style="margin-left: 50%; font-family: 'Kalam', cursive; font-size: 24px; font-weight: bold;color: #9cc2f4;">
+                    Connect with me on <a href="https://www.linkedin.com/in/kavish-gandhi" target="_blank"><u>LinkedIn</u></a>
+                </p>
+           </div>
+        </div>
+</section>
+<div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+    <button (click)="scrollToTop()">
+        <lord-icon
+                src="https://cdn.lordicon.com/gmzxduhd.json"
+                trigger="hover"
+                colors="primary:#000000,secondary:#000000"
+                stroke="24px"
+                style="width:39px;height:39px">
+        </lord-icon>
+    </button>
+</div>
+</html>
